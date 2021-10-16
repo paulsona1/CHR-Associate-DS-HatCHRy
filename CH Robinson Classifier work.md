@@ -9,7 +9,7 @@ library(tree)
 library(ISLR)
 ```
 
-Sup
+
 ```R
 # Data and notebook setup
 
