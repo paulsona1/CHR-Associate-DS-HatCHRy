@@ -12,7 +12,7 @@ library(tree)
 library(ISLR)
 ```
 
-This analysis constructs classifiers for our inferential target, CurrentCondition - a factor variable indicating order status. In this most initial section, I import the provided data and inpsect the levels of the target variable. I observe seven non-missing levels, which are highly unbalanced. In particular, approximately 60% of the orders have condition status "Accepted", compared to .05% of the orders having condition statuts "Waiting On Recommendation". The unbalance informs our selection of reasonable classification methods. For example, I hesitate to use support vector machines because designing weighting contrasts without much domain knowledge is probably ill-conceived. There are 16,156,315 rows in the data and 15 columns.
+This analysis constructs classifiers for our inferential target, CurrentCondition - a factor variable indicating order status. In this most initial section, I import the provided data and inpsect the levels of the target variable. I observe seven non-missing levels, which are highly unbalanced. In particular, approximately 60% of the orders have condition status "Accepted", compared to .05% of the orders having condition statuts "Waiting On Recommendation". The unbalance informs our selection of reasonable classification methods. For example, I hesitate to use support vector machines because designing weighting contrasts without much domain knowledge is probably ill-conceived. There are 16,156,315 rows in the data and 15 columns (after removing the intelligence-free row counter column).
 
 
 ```R
@@ -95,7 +95,7 @@ raw1 <- raw[which(raw$CurrentCondition != ""),] # remove missing target level
                   14.74186255 
 
 
-Now, do some exploratory data analysis.
+Now, do some exploratory data analysis. We begin by assessing the possibility of duplication within the orders data. We find a single duplicate request_id, corresponding to request_id **f0293ccd87b445f5989c6c68726608dc**. On inspection of these duplicate request_id, they appear to be
 
 
 ```R
