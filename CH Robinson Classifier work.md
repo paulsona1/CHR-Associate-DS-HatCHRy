@@ -9,13 +9,6 @@ library(tree)
 library(ISLR)
 ```
 
-    
-    The downloaded binary packages are in
-    	/var/folders/dg/j2pn79ns2hs4htwgp1cp3v8c0000gn/T//RtmpHagsPR/downloaded_packages
-    
-    The downloaded binary packages are in
-    	/var/folders/dg/j2pn79ns2hs4htwgp1cp3v8c0000gn/T//RtmpHagsPR/downloaded_packages
-
 
 
 ```R
