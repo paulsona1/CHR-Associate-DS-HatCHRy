@@ -95,8 +95,6 @@ raw1 <- raw[which(raw$CurrentCondition != ""),] # remove missing target level
                   14.74186255 
 
 
-Now, do some exploratory data analysis. We begin by assessing the possibility of duplication within the orders data. We find a single duplicate request_id, corresponding to request_id **f0293ccd87b445f5989c6c68726608dc**. On inspection of these duplicate request_id, they appear to be
-
 
 ```R
 # Exploratory data analysis
